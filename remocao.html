@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remoção</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="./homer.png" />
+    <style>
+        body {
+            background-color: #799c5c; /* Fundo neutro claro */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            max-width: 450px;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: none; /* Sem sombra para um visual mais clean */
+        }
+
+        h2 {
+            color: #333; /* Cor escura para o título */
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            font-weight: normal;
+            color: #555; /* Cor de texto mais suave */
+            font-size: 1rem;
+        }
+
+        .form-control {
+            border-radius: 4px; /* Bordas mais suaves */
+            border: 1px solid #ccc; /* Cor neutra para as bordas */
+            box-shadow: none;
+            padding: 12px; /* Espaço interno maior para campos de entrada */
+        }
+
+        .form-control:focus {
+            border-color: #287a5f; /* Cor de foco vermelha suave */
+            box-shadow: none;
+        }
+
+        .btn-danger {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.1rem;
+            background-color: #287a5f; /* Vermelho suave */
+            border: none;
+            border-radius: 4px; /* Bordas mais suaves */
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: #287a5f; /* Vermelho mais escuro no hover */
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Remover Informações</h2>
+        <form>
+            <div class="form-group">
+                <label for="txtNome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="txtNome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="txtLogin" class="form-label">Login:</label>
+                <input type="text" class="form-control" id="txtLogin" placeholder="Digite seu login">
+            </div>
+            <div class="form-group">
+                <label for="txtSenha" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="txtSenha" placeholder="Digite sua senha">
+            </div>
+            <button type="submit" class="btn btn-danger">Remover</button>
+        </form>
+    </div>
+
+    <script src="./remocao.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
