@@ -3,12 +3,11 @@ document.getElementById('frmLogin').addEventListener('submit', async (e) => {
     const nome = document.getElementById('txtNome').value;
     const login = document.getElementById('txtLogin').value;
     const senha = document.getElementById('txtSenha').value;
-    const tipo = 'login';
 
-    const response = await fetch('/api/mysql', {
+    const response = await fetch('/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, login, senha, tipo })
+        body: JSON.stringify({ nome, login, senha })
     });
 
     const result = await response.json();

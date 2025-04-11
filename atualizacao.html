@@ -7,86 +7,27 @@
     <title>Atualização</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="shortcut icon" href="./homer.png" />
-    <style>
-        body {
-            background-color: #8a4461; /* Azul claro suave */
-            font-family: 'Arial', sans-serif;
-        }
-
-        .container {
-            max-width: 500px;
-            padding: 2rem;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: none; /* Removido sombra para um design mais clean */
-        }
-
-        h2 {
-            color: #2c3e50; /* Azul escuro para título */
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-label {
-            font-weight: normal;
-            color: #34495e; /* Azul acinzentado */
-            font-size: 1rem;
-        }
-
-        .form-control {
-            border-radius: 4px; /* Borda mais suave e menor */
-            border: 1px solid #ccc; /* Cor neutra para os campos */
-            box-shadow: none; /* Sem sombras */
-            padding: 12px; /* Maior espaço interno para um visual mais limpo */
-        }
-
-        .form-control:focus {
-            border-color: #a0164f; /* Cor de foco verde suave */
-            box-shadow: none;
-        }
-
-        .btn-warning {
-            width: 100%;
-            padding: 10px;
-            font-size: 1.1rem;
-            background-color: #a0164f; /* Verde esmeralda */
-            border: none;
-            border-radius: 4px; /* Borda mais suave */
-            color: white;
-        }
-
-        .btn-warning:hover {
-            background-color: #a0164f; /* Verde mais claro no hover */
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-    </style>
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container mt-5">
-        <h2>Atualizar Informações</h2>
+        <h2 class="mb-4">Atualização</h2>
         <form>
-            <div class="form-group">
+            <div class="mb-3">
                 <label for="txtNome" class="form-label">Nome:</label>
-                <input type="text" class="form-control" id="txtNome" placeholder="Digite seu nome">
+                <input type="text" class="form-control" id="txtNome">
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <label for="txtLogin" class="form-label">Login:</label>
-                <input type="text" class="form-control" id="txtLogin" placeholder="Digite seu login">
+                <input type="text" class="form-control" id="txtLogin">
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <label for="txtSenha" class="form-label">Senha:</label>
-                <input type="password" class="form-control" id="txtSenha" placeholder="Digite sua senha">
+                <input type="password" class="form-control" id="txtSenha">
             </div>
             <button type="submit" class="btn btn-warning">Atualizar</button>
         </form>
     </div>
-
-    <script src="./atualizacao.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
